@@ -2,14 +2,17 @@ import React, {useEffect, useState} from 'react'
 import '../styles/App.css';
 
 const App = () => {
-//code here 
+  const [color, setColor] = useState(true)
+  function toggle() {
+    setColor(!color)
+    console.log(color)
+  }
+  //code here
   return (
     <div id="main">
-      <p className={} >Newton School</p>
-      <button id='button' onClick={}>Change Style</button>
+      <p className={`${color ? 'redColor' : 'blueColor'}`}>Newton School</p>
+      <button id="button" onClick={toggle}>
+        Change Style
+      </button>
     </div>
   )
-}
-
-
-export default App;
