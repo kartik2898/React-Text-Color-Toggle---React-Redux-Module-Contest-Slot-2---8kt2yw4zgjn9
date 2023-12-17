@@ -5,7 +5,6 @@ const App = () => {
   const [color, setColor] = useState(true)
   function toggle() {
     setColor(!color)
-    console.log(color)
   }
   //code here
   return (
@@ -16,4 +15,5 @@ const App = () => {
       </button>
     </div>
   )
-export default App
+}
+export default App;
